@@ -1,0 +1,59 @@
+{
+  "pages": [
+    "pages/food/food",
+    "pages/home/home",
+    "pages/appointment/appointment",
+    "pages/details/details",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/vip/vip",
+    "pages/shop/shop",
+    "pages/my/my",
+    "pages/business/business"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#1196db",
+    "navigationBarTitleText": "光谷吃货联盟",
+    "navigationBarTextStyle": "white"
+  },
+  "usingComponents": {
+    "van-button": "/miniprogram/miniprogram_npm/@vant/weapp/button/index",
+    "van-row": "/miniprogram/miniprogram_npm/@vant/weapp/row/index",
+    "van-col": "/miniprogram/miniprogram_npm/@vant/weapp/col/index",
+    "van-divider": "/miniprogram/miniprogram_npm/@vant/weapp/divider/index"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#858585",
+    "selectedColor": "#1296db",
+    "borderStyle": "white",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "iconPath": "/image/07.png",
+        "selectedIconPath": "/image/06.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/vip/vip",
+        "iconPath": "/image/05.png",
+        "selectedIconPath": "/image/04.png",
+        "text": "会员卡"
+      },
+      {
+        "pagePath": "pages/shop/shop",
+        "iconPath": "/image/03.png",
+        "selectedIconPath": "/image/02.png",
+        "text": "订单"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "iconPath": "/image/01.png",
+        "selectedIconPath": "/image/08.png",
+        "text": "我的"
+      }
+    ]
+  }
+}

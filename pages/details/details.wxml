@@ -1,0 +1,118 @@
+<!--pages/details/details.wxml-->
+<!-- 轮播开始 -->
+<swiper class="screen-swiper {{DotStyle?'square-dot':'round-dot'}}" indicator-dots="true" circular="true" autoplay="true" interval="5000" duration="500">
+	<swiper-item>
+		<image style="width:100%;height:200px" src="{{baan}}" mode="aspectFill"></image>
+		<video src="{{item.photo}}" autoplay loop muted show-play-btn="{{false}}" controls="{{false}}" objectFit="cover"></video>
+	</swiper-item>
+</swiper>
+<!-- 轮播结束 -->
+<!-- 功能展示开始 -->
+<view class="hibition">
+	<van-row>
+		<van-col span="6" wx:for="{{hibi}}" wx:key>
+			<navigator url="{{item.to}}">
+        <image src="{{item.photo}}"></image>
+			<view>
+				<text>{{item.text}}</text>
+			</view>
+      </navigator>
+		</van-col>
+	</van-row>
+</view>
+<!-- 功能展示结束 -->
+<!-- 阴影开始 -->
+<view class="shadow">
+
+</view>
+<!-- 阴影结束 -->
+<!-- 商家开始 -->
+<view class="list">
+	<van-row>
+		<van-col span="2" offset="1">
+			<image src="http://m.qpic.cn/psc?/V125ifz11cmniP/WmaLtG4DKwtTVCYYotv*PSd1P9h8QAuVve6SYOYuK7BXBSVDlzxfMrupR12KVpIhKdaKMFzjK*wgDaRf.3XVDNYymkX2eXanebdYE3m*lJs!/b&bo=IAAgAAAAAAADFzI!&rf=viewer_4&t=5"></image>
+		</van-col>
+		<van-col span="8">
+			<text style="position:relative;top:5px">商家详情</text>
+		</van-col>
+	</van-row>
+</view>
+<view class="list_take">
+	<van-row>
+		<van-col span="8" offset="1">
+        <image src="{{baan}}"></image>
+    </van-col>
+		<van-col span="4">
+        <view class="list_keat">
+          <text>{{baans}}</text>
+        </view>
+        <view class="list_mone">
+          <text>￥25/人</text>
+        </view>
+    </van-col>
+		<van-col span="6" offset="3">
+      <view class="bor">
+        <view class="bor_bot">
+          <text>店铺状态</text>
+        </view>
+        <view class="bor_top">
+          <text>营业中</text>
+        </view>
+      </view>
+    </van-col>
+	</van-row>
+</view>
+<!-- 商家结束 -->
+<!-- 时间开始 -->
+<view class="deat">
+  <text>营业时间: 06:00-12:00  12:02-23:55</text>
+</view>
+<view class="deat">
+  <van-row>
+  <van-col span="8">
+   <view class="deat_tola">
+     <text>光谷一路</text>
+   </view>
+  </van-col>
+  <van-col span="4" offset="6">
+    <view class="boa" bindtap="onGuideTap" data-latitude='35.41408' data-longitude='114.066224' data-bankName='新乡医学院'>
+    <image src="https://m.qpic.cn/psc?/V125ifz11cmniP/xBo1HguJwfqPLd*kRKpWsJSsOAaG1JPminLh6bE7Fab0a1g9dnu4kGIGcePkIUItcZJpxuHLhUZpNZGIIr2oBg!!/b&bo=KAAgAAAAAAADByo!&rf=viewer_4&t=5"></image>
+    <view>导航</view>
+    </view>
+      </van-col>
+  <van-col span="4" offset="2">
+    <view data-id='4' catchtap='tels' data-current="4">
+      <image src="http://m.qpic.cn/psc?/V125ifz11cmniP/WmaLtG4DKwtTVCYYotv*PV*23IJpGhHdUoLBMeNLtyB34eix4xGZH.JrcNifPVYLCI7rm0fOpwBqzTQTdGJ93myVEwdwuK28i7M92MSd0KU!/b&bo=IAAgAAAAAAADFzI!&rf=viewer_4&t=5"></image>
+    <view>电话</view>
+    </view>
+  </van-col>
+</van-row>
+</view>
+<view class="deat">
+  <van-row>
+  <van-col span="8">
+    <text>商家环境</text>
+  </van-col>
+  <van-col span="2" offset="14"><image style="width:60%;height:15px" src="http://m.qpic.cn/psc?/V125ifz11cmniP/WmaLtG4DKwtTVCYYotv*PRQ1osgYc8*wOtalVptFtIhr6Ex4ybFCaJPjw6toYVrHpN8rXe2OKmnXww3PNAcecq4I0UGCXzrPLrVAQ9KzRTM!/b&bo=EAAQAAAAAAADFzI!&rf=viewer_4&t=5"></image></van-col>
+</van-row>
+</view>
+<!-- 时间结束 -->
+<!-- 阴影开始 -->
+<view class="shadow">
+
+</view>
+<!-- 阴影结束 -->
+<!-- tab开始 -->
+<view>
+  <van-tabs active="{{ active }}" bind:change="onChange">
+  <van-tab title="商品推荐"><view style="text-align: center;">无</view></van-tab>
+  <van-tab title="优惠券"><view style="text-align: center;">无</view></van-tab>
+  <van-tab title="评价"><view style="text-align: center;">无</view></van-tab>
+</van-tabs>
+</view>
+<!-- tab结束 -->
+<!-- 阴影开始 -->
+<view class="shadow">
+
+</view>
+<!-- 阴影结束 -->

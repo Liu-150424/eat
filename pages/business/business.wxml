@@ -1,0 +1,39 @@
+<!--pages/business/business.wxml-->
+<!-- 商家展示开始 -->
+<view wx:for="{{exhibition}}" wx:key bindtap="onChange" data-name="{{item.tetx}}" data-img="{{item.photo}}">
+	<navigator url="{{item.to}}">
+		<view class="exhibition">
+			<van-row>
+				<van-col span="6">
+					<image src="{{item.photo}}"></image>
+				</van-col>
+				<van-col span="8">
+					<view>
+						{{item.tetx}}
+					</view>
+					<view>
+						<van-rate value="{{ value }}" bind:change="onChange" size="{{10}}" />
+						<text>{{item.year}}</text>
+						<text>{{item.name}}</text>
+					</view>
+					<view>
+						起送 ￥0丨配送￥0.00起
+					</view>
+				</van-col>
+				<van-col span="8">
+					<view style="padding-top:20px">
+						<text class="exhibition_supa">超级跑腿</text>
+						<text class="exhibition_supb">准时达</text>
+					</view>
+					<view>
+						<view>
+							524.24km丨30分钟
+						</view>
+					</view>
+				</van-col>
+			</van-row>
+		</view>
+	</navigator>
+</view>
+
+<!-- 商家展示结束 -->

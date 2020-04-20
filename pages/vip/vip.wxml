@@ -1,0 +1,52 @@
+<!--pages/vip/vip.wxml-->
+<!-- 图片开始 -->
+<view>
+	<image style="width:100%" src="https://m.qpic.cn/psc?/V125ifz11cmniP/xBo1HguJwfqPLd*kRKpWsOSurZWOCgpvL49gQgkiG3ciOlWSY8OPJ3Fz7r2hKe6rXc9Jc1zZoXdM0tb73Wn9Zg!!/b&bo=3AHdAAAAAAADByI!&rf=viewer_4&t=5"></image>
+</view>
+<!-- 图片结束 -->
+<!-- 金色边框开始 -->
+<van-row>
+	<van-col span="8" offset="8">
+		<view class="bor_tear">会员特权</view>
+	</van-col>
+	<van-col span="5">
+		<view><text class="bor_text">特权说明</text>
+			<image class="bor" src="https://m.qpic.cn/psc?/V125ifz11cmniP/xBo1HguJwfqPLd*kRKpWsBE0LoIDC1z3ZNg0Dazl0fHRpccIqKpnBTQzfSWAGhI3dJD12tgGvvtXc5sYBQvYUQ!!/b&bo=GgAaAAAAAAADByI!&rf=viewer_4&t=5"></image>
+		</view>
+	</van-col>
+</van-row>
+<view class="golden">
+  <van-row>
+  <van-col span="8" offset="6">
+    <image src="https://m.qpic.cn/psc?/V125ifz11cmniP/xBo1HguJwfqPLd*kRKpWsNHwnwaW4CcZu90C.HTwA1G82moNnYZE0C6Q1uLHNxSghQAvAyJAsYwLwuv90kLCtA!!/b&bo=MAAwAAAAAAADByI!&rf=viewer_4&t=5"></image>
+    <view><text>特殊标识</text></view>
+  </van-col>
+  <van-col span="8">
+    <image src="http://m.qpic.cn/psc?/V125ifz11cmniP/WmaLtG4DKwtTVCYYotv*PRjMjIiyFBSSNWsKi7XSt7xTABZaFYRG6Wx7FnatxrFearOIKAzfAv6u6qci9A*nIB9042ywwyG4FkYQU6BDl8U!/b&bo=MAAwAAAAAAADFzI!&rf=viewer_4&t=5"></image>
+    <view>
+      <text>专属折扣</text>
+    </view>
+  </van-col>
+</van-row>
+</view>
+<!-- 金色边框结束 -->
+<!-- 阴影开始 -->
+<view class="shadow">
+
+</view>
+<!-- 阴影结束 -->
+<!-- 介绍开始 -->
+  <view class="introduce">
+    <text class="introduce_shop">
+      买单享受专属折扣
+    </text>
+  </view>
+  <view class="introduce">
+    <text class="introduce_sily">会员期内购买单可享受</text>
+    <text class="introduce_red">折扣优惠</text>
+  </view>
+<!-- 介绍结束 -->
+<!-- 按钮 -->
+<view class="but">
+  <button>开通会员>></button>
+</view>

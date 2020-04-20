@@ -1,0 +1,80 @@
+/* pages/details/details.wxss */
+/* 功能展示 */
+.hibition image{
+  width: 40%;
+  height: 40px;
+}
+.hibition{
+  text-align: center;
+  margin-top: 30px;
+}
+/* 阴影 */
+.shadow{
+  background-color: silver;
+  height: 10px;
+  margin-top: 15px;
+  opacity: 0.3;
+}
+/* 商家 */
+.list image{
+  width: 80%;
+  height: 25px;
+}
+.list{
+  margin-top: 25px;
+}
+.list_take image{
+  width: 60%;
+  border-radius: 50px;
+  height: 80px;
+}
+.bor{
+  background-color: red;
+  height: 80px;
+  opacity: 0.7;
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+}
+.bor_bot{
+  width: 80%;
+  border-bottom: 1px solid white;
+  text-align: center;
+  margin-left: 10%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.bor_top{
+  padding-top: 10px;
+}
+.list_take{
+  margin-top: 15px;
+}
+.list_keat{
+  font-weight:800;
+  font-size: 18px;
+  opacity: 0.5;
+}
+.list_mone{
+  opacity: 0.4;
+  margin-top: 15px;
+}
+/* 时间 */
+.deat image{
+  width: 50%;
+  height: 30px;
+}
+.deat{
+  margin-top: 20px;
+  border-top: 1px solid #ebedf0;
+  width: 90%;
+  margin-left: 5%;
+  padding-top: 15px;
+}
+.boa{
+  border-right: 1px solid #ebedf0;
+  height: 80%;
+}
+.deat_tola{
+  padding-top: 15px;
+}

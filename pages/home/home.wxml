@@ -1,0 +1,191 @@
+<!--pages/home/home.wxml-->
+<view>
+	<!-- 轮播开始 -->
+	<swiper class="screen-swiper {{DotStyle?'square-dot':'round-dot'}}" indicator-dots="true" circular="true" autoplay="true" interval="5000" duration="500">
+		<swiper-item wx:for="{{bann}}" wx:key>
+			<image style="width:100%;height:200px" src="{{item.photo}}" mode="aspectFill"></image>
+			<video src="{{item.photo}}" autoplay loop muted show-play-btn="{{false}}" controls="{{false}}" objectFit="cover"></video>
+		</swiper-item>
+	</swiper>
+	<!-- 轮播结束 -->
+	<!-- 菜单开始 -->
+	<view class="menu">
+		<van-row gutter="10">
+			<van-col span="4.5" wx:for="{{menu}}" wx:key>
+				<navigator url="{{item.to}}">
+					<image src="{{item.ima}}">
+					</image>
+					<text>{{item.tet}}</text>
+				</navigator>
+			</van-col>
+		</van-row>
+		<van-row gutter="10">
+			<van-col span="4.5" wx:for="{{menus}}" wx:key>
+				<image src="{{item.ima}}">
+				</image>
+				<text>{{item.tet}}</text>
+			</van-col>
+		</van-row>
+	</view>
+	<!-- 菜单结束 -->
+</view>
+<!-- 公告栏开始 -->
+<view class="notice">
+	<van-row>
+		<van-col span="4" offset="3">
+			<view class="notice_last"><text>周边在买啥</text></view>
+		</van-col>
+		<van-col span="12" offset="1">
+			<swiper vertical="true" autoplay="true" circular="true" interval="2000">
+				<block wx:for="{{msgList}}">
+					<swiper-item>
+						<view>{{item.title}}</view>
+					</swiper-item>
+				</block>
+			</swiper>
+		</van-col>
+		<van-col span="2">
+			<image style="width:60%;height:15px" src="https://m.qpic.cn/psc?/V125ifz11cmniP/xBo1HguJwfqPLd*kRKpWsIb1JUZDCCwmma04uEr5eD9bwflXOn0eWNofHlmR.BOqVTL7nowfDQ6LUUOrZEVQZQ!!/b&bo=EAAQAAAAAAADByI!&rf=viewer_4&t=5"></image>
+		</van-col>
+	</van-row>
+</view>
+<!-- 公告栏结束 -->
+<!-- 阴影开始 -->
+<view class="shadow">
+
+</view>
+<!-- 阴影结束 -->
+<!-- 活动开始 -->
+<view class="activity">
+	<van-row>
+		<van-col span="11" offset="1">
+			<image src="https://m.qpic.cn/psc?/V125ifz11cmniP/xBo1HguJwfqPLd*kRKpWsBFQJZUA0TC0Va.xpo*.Reat8K92ueqfjleNNzd.i9lY21sOljE*ERxWrEv9F*ySrg!!/b&bo=7gL0AQAAAAARByk!&rf=viewer_4&t=5"></image>
+		</van-col>
+		<van-col span="11" offset="1">
+			<image src="http://m.qpic.cn/psc?/V125ifz11cmniP/WmaLtG4DKwtTVCYYotv*PWacgrcYLwlNs*I8DzXMhxSIO3abEa4DoUyoGecJTAqKOIWltsi0ixqJTHKufBo8E3Yl6SY0G5gI2xqqrPPU6Ug!/b&bo=ZQTyAgAAAAARF7E!&rf=viewer_4&t=5"></image>
+		</van-col>
+	</van-row>
+</view>
+<!-- 活动结束 -->
+<!-- 会员卡开始 -->
+<view class="card">
+	<image src="http://m.qpic.cn/psc?/V125ifz11cmniP/WmaLtG4DKwtTVCYYotv*PRpPI6LXrH3ya29JSUhWAaYgndvN9uo9Yo6*jZNWzMZookaZww9ogD7Eqa78*9GGcK5To0MmQjuZwJGh4Ckkgt0!/b&bo=7gKGAAAAAAARF0o!&rf=viewer_4&t=5"></image>
+</view>
+<!-- 会员卡结束 -->
+<!-- 阴影开始 -->
+<view class="shadow">
+
+</view>
+<!-- 阴影结束 -->
+<!-- 限时抢购开始 -->
+<view class="limited">
+	<van-row>
+		<van-col span="3" offset="2">
+			<view class="limited_tike">
+				<image src="https://m.qpic.cn/psc?/V125ifz11cmniP/xBo1HguJwfqPLd*kRKpWsAKNE9i7nNSo5KGPUkUJ.wzzR9W..ly6S52cN2jUKLBXVR1p.eDbm1.Avepweiz.TA!!/b&bo=ZABkAAAAAAADByI!&rf=viewer_4&t=5"></image>
+			</view>
+		</van-col>
+		<van-col span="4"><text style="color:red;font-weight:900">限时抢购</text></van-col>
+		<van-col span="2" offset="11">
+			<image src="http://m.qpic.cn/psc?/V125ifz11cmniP/WmaLtG4DKwtTVCYYotv*PRQ1osgYc8*wOtalVptFtIhr6Ex4ybFCaJPjw6toYVrHMaHae051.AZx*m0lMarqyqNJPsnX2wDdwaSZnTbuzJc!/b&bo=EAAQAAAAAAADFzI!&rf=viewer_4&t=5"></image>
+		</van-col>
+	</van-row>
+</view>
+<scroll-view scroll-x="true">
+	<view class="banner" scroll-x="true">
+		<view class="banner_Item">
+			<image src="https://m.qpic.cn/psc?/V125ifz11cmniP/xBo1HguJwfqPLd*kRKpWsBPWW.hWuYSzSDoopDELOe7SGp1OUTscNnvvR3IlUVLhAhkwa9p8UKzJqJUEWDWu0g!!/b&bo=gAKEAQAAAAARBzc!&rf=viewer_4&t=5"></image>
+			<text class="item">香辣鸡腿堡</text>
+			<text class="item_coa">￥0.01<text class="item_cob">￥0.01</text></text>
+		</view>
+		<view class="banner_Item">
+			<image src="http://m.qpic.cn/psc?/V125ifz11cmniP/WmaLtG4DKwtTVCYYotv*PQZ4jpsyOjQvM0oZJh2tUAFiZogERCxqMyEZXO.44VWPrrjRGIu1*ZHpHvvT5rOC*5t.ohf0i93qZ0tlEJg1ZzQ!/b&bo=9AEvAQAAAAARF*s!&rf=viewer_4"></image>
+			<text class="item">鸡腿</text>
+			<text class="item_coa">￥0.01<text class="item_cob">￥0.01</text></text>
+		</view>
+		<view class="banner_Item">
+			<image src="http://m.qpic.cn/psc?/V125ifz11cmniP/WmaLtG4DKwtTVCYYotv*PfmYDCugTJP1yYRViDGgg2ly8FkCxTFakm6TMYkr3Z3zXRhT**k9HBegTv6PN0P21k1TjT4GIsHOursL6AtOKS4!/b&bo=XgHIAAAAAAARF7c!&rf=viewer_4"></image>
+			<text class="item">鸡排</text>
+			<text class="item_coa">￥0.01<text class="item_cob">￥0.01</text></text>
+		</view>
+		<view class="banner_Item">
+			<image src="http://m.qpic.cn/psc?/V125ifz11cmniP/WmaLtG4DKwtTVCYYotv*PXWPTOUqhN37YFwEXi8PhcFNGNcjMzXhV8J31KhX2krKnD8DlMgNnYPgr24C3aXn9EqR8Lu319qf7c47T1D*LXE!/b&bo=9AFIAQAAAAARF5w!&rf=viewer_4&t=5"></image>
+			<text class="item">鸡块</text>
+			<text class="item_coa">￥0.01<text class="item_cob">￥0.01</text></text>
+		</view>
+	</view>
+</scroll-view>
+<!-- 限时抢购结束 -->
+<!-- 阴影开始 -->
+<view class="shadow">
+
+</view>
+<!-- 阴影结束 -->
+<!-- 店家开始 -->
+<van-divider contentPosition="center">品质优选</van-divider>
+<view class="owner">
+	<van-row>
+		<van-col span="5" offset="1" wx:for="{{owner}}" wx:key bindtap="onChange" data-name="{{item.tetx}}" data-img="{{item.photo}}">
+			<navigator url="{{item.to}}">
+				<view>
+					<image src="{{item.photo}}"></image>
+				</view>
+				<view>{{item.tetx}}</view>
+				<view class="owner_bor">大牌精选</view>
+			</navigator>
+		</van-col>
+	</van-row>
+</view>
+<!-- 店家结束 -->
+<!-- 广告开始 -->
+<view class="card">
+	<image src="http://m.qpic.cn/psc?/V125ifz11cmniP/WmaLtG4DKwtTVCYYotv*PRpPI6LXrH3ya29JSUhWAaYgndvN9uo9Yo6*jZNWzMZookaZww9ogD7Eqa78*9GGcK5To0MmQjuZwJGh4Ckkgt0!/b&bo=7gKGAAAAAAARF0o!&rf=viewer_4&t=5"></image>
+</view>
+<!-- 广告结束 -->
+<!-- 阴影开始 -->
+<view class="shadow">
+
+</view>
+<!-- 阴影结束 -->
+<!-- 商家开始 -->
+<van-divider contentPosition="center">推荐商家</van-divider>
+
+<!-- 商家结束 -->
+<!-- 商家展示开始 -->
+<view wx:for="{{exhibition}}" wx:key bindtap="onChange" data-name="{{item.tetx}}" data-img="{{item.photo}}">
+	<navigator url="{{item.to}}">
+		<view class="exhibition">
+			<van-row>
+				<van-col span="6">
+					<image src="{{item.photo}}"></image>
+				</van-col>
+				<van-col span="8">
+					<view>
+						{{item.tetx}}
+					</view>
+					<view>
+						<van-rate value="{{ value }}" bind:change="onChange" size="{{10}}" />
+						<text>{{item.year}}</text>
+						<text>{{item.name}}</text>
+					</view>
+					<view>
+						起送 ￥0丨配送￥0.00起
+					</view>
+				</van-col>
+				<van-col span="8">
+					<view style="padding-top:20px">
+						<text class="exhibition_supa">超级跑腿</text>
+						<text class="exhibition_supb">准时达</text>
+					</view>
+					<view>
+						<view>
+							524.24km丨30分钟
+						</view>
+					</view>
+				</van-col>
+			</van-row>
+		</view>
+	</navigator>
+</view>
+
+<!-- 商家展示结束 -->

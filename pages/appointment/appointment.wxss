@@ -1,0 +1,59 @@
+/* pages/appointment/appointment.wxss */
+/* 展示 */
+.appoi_col{
+  width: 5px;
+  height: 20px;
+  background-color: #1989fa;
+}
+.appoi{
+  margin-top: 15px;
+  border-bottom: 1px solid #ebedf0;
+  padding-bottom: 15px;
+}
+/* 阴影 */
+.shadow{
+  background-color: silver;
+  height: 30px;
+  opacity: 0.4;
+}
+.shadows{
+  background-color: silver;
+  height: 30px;
+  opacity: 0.4;
+  margin-top: 15px;
+}
+/* 预约 */
+.bor_coa{
+  height: 50px;
+  /* background-color:#1989fa; */
+  border-radius: 15px;
+  padding-top: 35px;
+  text-align: center;
+  /* color: white; */
+  border: 1px solid silver;
+}
+.bor_coas{
+  height: 50px;
+  /* background-color:#1989fa; */
+  border-radius: 15px;
+  padding-top: 35px;
+  text-align: center;
+  /* color: white; */
+  border: 1px solid silver;
+}
+/* 底部 */
+.botm{
+  border:1px solid silver;
+  width: 90%;
+  height: 80px;
+  margin-left: 5%;
+  margin-top: 15px;
+}
+.butn{
+  width: 90%;
+  background-color: #1989fa;
+  margin-left: 5%;
+  color: white;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}

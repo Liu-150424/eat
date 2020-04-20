@@ -1,0 +1,12 @@
+{
+  "usingComponents": {
+    "van-tab": "/miniprogram/miniprogram_npm/@vant/weapp/tab/index",
+    "van-tabs": "/miniprogram/miniprogram_npm/@vant/weapp/tabs/index",
+    "van-overlay": "/miniprogram/miniprogram_npm/@vant/weapp/overlay/index",
+    "van-rate": "/miniprogram/miniprogram_npm/@vant/weapp/rate/index",
+    "van-sidebar": "/miniprogram/miniprogram_npm/@vant/weapp/sidebar/index",
+    "van-sidebar-item": "/miniprogram/miniprogram_npm/@vant/weapp/sidebar-item/index",
+    "van-stepper": "/miniprogram/miniprogram_npm/@vant/weapp/stepper/index"
+  },
+  "navigationBarTitleText": "商品列表"
+}

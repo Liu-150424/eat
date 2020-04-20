@@ -1,0 +1,13 @@
+/* pages/shop/shop.wxss */
+.shops image{
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 200rpx;
+}
+.shops{
+  width: 100%;
+}
+.shops_text{
+  text-align: center;
+  opacity: 0.6;
+}

@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "肯德基",
+  "usingComponents": {
+    "van-tab": "/miniprogram/miniprogram_npm/@vant/weapp/tab/index",
+    "van-tabs": "/miniprogram/miniprogram_npm/@vant/weapp/tabs/index"
+  }
+}

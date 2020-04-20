@@ -1,0 +1,26 @@
+/* pages/business/business.wxss */
+/* 商家展示 */
+.exhibition image{
+  width: 80%;
+  height: 80px;
+  border-radius: 50%;
+}
+.exhibition{
+  text-align: left;
+  font-size: 14px;
+  color: silver;
+  border-bottom: 1px solid silver;
+  margin-top: 15px;
+}
+.exhibition_supa{
+  border: 1px solid red;
+  border-radius: 25px;
+  color: white;
+  background-color: red;
+}
+.exhibition_supb{
+  border: 1px solid red;
+  border-radius: 25px;
+  color: red;
+  margin-left: 5%;
+}

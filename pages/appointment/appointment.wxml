@@ -1,0 +1,142 @@
+<!--pages/appointment/appointment.wxml-->
+<!-- 展示开始 -->
+<view class="appoi">
+	<van-row>
+		<van-col span="1">
+			<view class="appoi_col"></view>
+		</van-col>
+		<van-col span="4"><text>预约信息</text></van-col>
+	</van-row>
+</view>
+<view class="appoi">
+	<van-row>
+		<van-col span="8" offset="1">
+			<text>选择人数</text>
+		</van-col>
+		<van-col span="4" offset="11">
+			<text>1人</text>
+			<image style="width:32%;height:15px" src="http://m.qpic.cn/psc?/V125ifz11cmniP/WmaLtG4DKwtTVCYYotv*PRQ1osgYc8*wOtalVptFtIhr6Ex4ybFCaJPjw6toYVrHpN8rXe2OKmnXww3PNAcecq4I0UGCXzrPLrVAQ9KzRTM!/b&bo=EAAQAAAAAAADFzI!&rf=viewer_4&t=5"></image>
+		</van-col>
+	</van-row>
+</view>
+<view class="appoi">
+	<van-row>
+		<van-col span="4" offset="1">
+			<text>选择时间</text>
+		</van-col>
+		<van-col span="12" offset="7"><text>2020-04-14日06：00</text>
+			<image style="width:11%;height:15px;margin-left:2%" src="http://m.qpic.cn/psc?/V125ifz11cmniP/WmaLtG4DKwtTVCYYotv*PRQ1osgYc8*wOtalVptFtIhr6Ex4ybFCaJPjw6toYVrHpN8rXe2OKmnXww3PNAcecq4I0UGCXzrPLrVAQ9KzRTM!/b&bo=EAAQAAAAAAADFzI!&rf=viewer_4&t=5"></image>
+		</van-col>
+	</van-row>
+</view>
+<view class="appoi">
+	<van-row>
+		<van-col span="6" offset="1">
+			<text>选择桌位类型</text>
+		</van-col>
+		<van-col span="12" offset="5"><text>单人桌--最低消费0.01</text>
+			<image style="width:11%;height:15px;margin-left:2%" src="http://m.qpic.cn/psc?/V125ifz11cmniP/WmaLtG4DKwtTVCYYotv*PRQ1osgYc8*wOtalVptFtIhr6Ex4ybFCaJPjw6toYVrHpN8rXe2OKmnXww3PNAcecq4I0UGCXzrPLrVAQ9KzRTM!/b&bo=EAAQAAAAAAADFzI!&rf=viewer_4&t=5"></image>
+		</van-col>
+	</van-row>
+</view>
+<view class="appoi">
+	<van-row>
+		<van-col span="6" offset="1">
+			<text>桌位预定费用</text>
+		</van-col>
+		<van-col span="4" offset="12"><text>0.01元</text>
+			<image style="width:25%;height:15px;margin-left:2%" src="http://m.qpic.cn/psc?/V125ifz11cmniP/WmaLtG4DKwtTVCYYotv*PRQ1osgYc8*wOtalVptFtIhr6Ex4ybFCaJPjw6toYVrHpN8rXe2OKmnXww3PNAcecq4I0UGCXzrPLrVAQ9KzRTM!/b&bo=EAAQAAAAAAADFzI!&rf=viewer_4&t=5"></image>
+		</van-col>
+	</van-row>
+</view>
+<view class="appoi">
+	<van-row>
+		<van-col span="4" offset="1">
+			<text>选择时间</text>
+		</van-col>
+		<van-col span="12" offset="7"><text>2020-04-14日06：00</text>
+			<image style="width:11%;height:15px;margin-left:2%" src="http://m.qpic.cn/psc?/V125ifz11cmniP/WmaLtG4DKwtTVCYYotv*PRQ1osgYc8*wOtalVptFtIhr6Ex4ybFCaJPjw6toYVrHpN8rXe2OKmnXww3PNAcecq4I0UGCXzrPLrVAQ9KzRTM!/b&bo=EAAQAAAAAAADFzI!&rf=viewer_4&t=5"></image>
+		</van-col>
+	</van-row>
+</view>
+<view class="appoi">
+	<van-row>
+		<van-col span="4" offset="1">
+			<text>联系人</text>
+		</van-col>
+		<van-col span="8">
+			<input style="color:silver" value="请输入联系人称呼"></input>
+		</van-col>
+		<van-col span="4" offset="1">
+			<van-radio-group value="{{ radio }}" bind:change="onChange">
+				<van-radio name="1">先生</van-radio>
+			</van-radio-group>
+		</van-col>
+		<van-col span="4" offset="1">
+			<van-radio-group value="{{ radios }}" bind:change="onChanges">
+				<van-radio name="2">女士</van-radio>
+			</van-radio-group>
+		</van-col>
+	</van-row>
+</view>
+<view class="appoi">
+	<van-row>
+		<van-col span="4" offset="1"><text>联系电话</text></van-col>
+		<van-col span="8"><input style="color:silver" value="请输入电话号码"></input></van-col>
+	</van-row>
+</view>
+<!-- 展示结束 -->
+<!-- 阴影开始 -->
+<view class="shadow">
+
+</view>
+<!-- 阴影结束 -->
+<!-- 预约开始 -->
+<view style="margin-top:20px">
+	<van-row>
+		<van-col span="1">
+			<view class="appoi_col"></view>
+		</van-col>
+		<van-col span="4"><text>预约模式</text></van-col>
+	</van-row>
+</view>
+<view>
+	<view style="margin-top:60px">
+		<van-row>
+			<van-col span="10" offset="1">
+				<view class="bor_coa" style="background-color:{{backcol}};color:{{textcol}}">
+					<text>只订座</text>
+					<radio style="padding-left:30px" checked="{{checked}}" bindtap="bora"></radio>
+				</view>
+			</van-col>
+			<van-col span="10" offset="1">
+				<view class="bor_coas" style="background-color:{{backcos}};color:{{textcols}}">
+					<text>提前选商品</text>
+					<radio style="padding-left:30px" checked="{{checkeds}}" bindtap="boras"></radio>
+				</view>
+			</van-col>
+		</van-row>
+	</view>
+</view>
+<!-- 预约结束 -->
+<!-- 阴影开始 -->
+<view class="shadows">
+
+</view>
+<!-- 阴影结束 -->
+<!-- 底部开始 -->
+<view style="margin-top:20px">
+	<text style="margin-left:20px">备注</text>
+</view>
+<view class="botm">
+	<van-cell-group>
+		<van-field value="{{ value }}" placeholder="请输入备注信息" placeholder-style="font-size:18px" border="{{ false }}" bind:change="onChange" />
+	</van-cell-group>
+</view>
+<!-- 底部结束 -->
+<!-- 阴影开始 -->
+<view class="shadows">
+
+</view>
+<!-- 阴影结束 -->
+<button class="butn">立即预约</button>

@@ -1,0 +1,92 @@
+/* pages/food/food.wxss */
+/* 介绍 */
+.go_img{
+  width: 80%;
+  height: 70px;
+  border-radius: 10px;
+}
+.go_img1{
+  width: 10%;
+  height: 20px;
+}
+.go_img2{
+  width: 30%;
+  height: 15px;
+}
+.go_img3{
+  width: 40%;
+  height: 10px;
+  margin-top: 25px;
+}
+.go_img4{
+  width: 10%;
+  height: 40px;
+  margin-left: 88%;
+}
+/* 遮挡层 */
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.block {
+  width: 60%;
+  height: 300px;
+  background-color: #fff;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  font-family: "Microsoft YaHei"
+}
+.left {
+  width: 30%;
+  font-size: 15px;
+  height: 500px;
+  background-color: #F4F4F4;
+}
+.left view {
+  text-align: center;
+  height: 45px;
+  line-height: 45px;
+}
+.select {
+  background-color: #ffffff;
+  border-left: 2px solid #36AE66;
+  font-weight: bold;
+  color: #36AE66;
+}
+.normal {
+  background-color: #F4F4F4;
+  border-bottom: 1px solid #f2f2f2;
+}
+.right {
+  width: 70%;
+  margin: 0px;
+}
+.lota{
+  width: 100%;
+  height: 30px;
+  background-color: silver;
+  opacity: 0.4;
+}
+.lis_img{
+  width: 100%;
+  height: 80px;
+}
+.lis_img1{
+  width: 40%;
+  height: 20px;
+  padding-top: 40px;
+}
+.lis_img2{
+  width: 40%;
+  height: 20px;
+  padding-top: 40px;
+  padding-right: 5px;
+}

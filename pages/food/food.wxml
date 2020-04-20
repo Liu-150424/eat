@@ -1,0 +1,166 @@
+<!--pages/food/food.wxml-->
+<!-- 介绍开始 -->
+<view style="padding-top:20px;background-color:#1196db;height:120px">
+	<van-row>
+		<van-col span="5" offset="1">
+			<image class="go_img" src="https://m.qpic.cn/psc?/V125ifz11cmniP/xBo1HguJwfqPLd*kRKpWsBFYdY1m5m.*pyZUBCXi7TGqGC2eqfWGo6rVS7Til81y9uPwYHm0*PxAEmsklqIy*w!!/b&bo=GgY4BAAAAAARBxA!&rf=viewer_4&t=5"></image>
+		</van-col>
+		<van-col span="15">
+			<view>
+				<text style="color:white">肯德基宝龙店</text>
+			</view>
+			<view>
+				<image class="go_img1" src="https://m.qpic.cn/psc?/V125ifz11cmniP/xBo1HguJwfqPLd*kRKpWsE7vwLKq0w8TQTb8RyxASpY5P9339sh5qZmA1I65KrepCT0LF02c7Qpd9y6yB6dNqA!!/b&bo=IAAgAAAAAAADByI!&rf=viewer_4&t=5"></image>
+			</view>
+			<view>
+				<text style="font-size:12px;color:white">￥起送丨30分钟送达丨超级跑腿(5555公里内)</text>
+			</view>
+		</van-col>
+		<van-col span="3">
+			<image class="go_img2" src="http://m.qpic.cn/psc?/V125ifz11cmniP/WmaLtG4DKwtTVCYYotv*PeWKQqQATcWJUDc4lpf1y7GyNUuypIq4pXDBJ9b8TBiaRoH4GQVNUmaHTzvm0zvoLxVWupAhYIb*3t3.f3d7UE0!/b&bo=JQAgAAAAAAADFzc!&rf=viewer_4&t=5"></image>
+			<text style="font-size:12px;color:white">收藏</text>
+			<view>
+				<image class="go_img3" src="https://m.qpic.cn/psc?/V125ifz11cmniP/xBo1HguJwfqPLd*kRKpWsIb1JUZDCCwmma04uEr5eD9bwflXOn0eWNofHlmR.BOqVTL7nowfDQ6LUUOrZEVQZQ!!/b&bo=EAAQAAAAAAADByI!&rf=viewer_4&t=5"></image>
+			</view>
+		</van-col>
+	</van-row>
+</view>
+<!-- 介绍结束 -->
+<!-- teb开始 -->
+<van-tabs active="{{ active }}" bind:change="onChange">
+	<van-tab title="外卖">
+		<!-- 遮挡层开始 -->
+		<!-- <van-button type="primary" bind:click="onClickShow">嵌入内容</van-button> -->
+		<view>
+			<image class="go_img4" bindtap="onClickShow" src="https://m.qpic.cn/psc?/V125ifz11cmniP/xBo1HguJwfqPLd*kRKpWsM74p5dFQVPeWN.UTwjz9AT4hUf1LRAx4fDn6ZcK7gBn92PwhEZHY7zJiCPeKfeq.w!!/b&bo=IAAgAAAAAAADByI!&rf=viewer_4&t=5"></image>
+		</view>
+		<van-overlay show="{{ show }}" bind:click="onClickHide">
+			<view class="wrapper">
+				<view class="block" catch:tap="noop">
+					<view>
+						<text>肯德基宝龙店</text>
+					</view>
+					<view style="margin-top:15px">
+						<van-rate value="{{ value }}" bind:change="onChange" />
+					</view>
+					<view>
+						<text style="font-size:12px;color:silver">￥起送丨人均￥0丨配送￥0.00丨30分钟</text>
+					</view>
+					<view style="margin-top:15px">
+						<text>商家公告</text>
+					</view>
+					<view style="margin-top:15px">
+						<text>优惠信息</text>
+					</view>
+				</view>
+			</view>
+		</van-overlay>
+		<!-- 遮挡层结束 -->
+	</van-tab>
+	<van-tab title="评价">内容 2</van-tab>
+	<van-tab title="详情">内容 3</van-tab>
+</van-tabs>
+<!-- tab结束 -->
+<!-- 商品开始 -->
+<view class="content">
+	<view class='left'>
+		<view class="{{flag==0?'select':'normal'}}" id='0' bindtap='switchNav'>热销</view>
+		<view class="{{flag==1?'select':'normal'}}" id='1' bindtap='switchNav'>汉堡</view>
+	</view>
+	<view class='right'>
+		<view class='category'>
+			<swiper current='{{currentTab}}' style='height:500px' vertical="{{true}}">
+				<swiper-item id='0' catchtouchmove="stopTouchMove">
+					<view class="lota">热销（3）</view>
+					<view style="margin-top:20px;font-size:12px;border-bottom:1px solid silver;padding-bottom:10px" wx:for="{{lis}}" wx:key>
+						<van-row>
+							<van-col span="6" offset="1">
+								<image class="lis_img" src="{{item.photo}}"></image>
+							</van-col>
+							<van-col span="6" offset='1'>
+								<view style="padding-top:20px">
+									<view>
+										<text style="font-size:14px">{{item.text}}</text>
+									</view>
+									<view>
+										<text>{{item.name}}</text>
+									</view>
+									<view>
+										<text style="color:red">
+										{{item.yel}}
+										</text>
+									</view>
+								</view>
+							</van-col>
+							<van-col span="8" offset='1'>
+								<view style="padding-top:20px">
+									<view>招牌</view>
+									<view style="padding-top:25px">
+                  <!-- <image class="lis_img2" src="{{item.photo_y}}"></image>
+                    <text>{{item.num}}</text>
+										<image class="lis_img1"   wx:key bindtap="numjia" data-num="{{item.num}}" data-yel="{{item.yel}}" data-num="{{item.num}}" data-id="{{item.id}}" src="{{item.jia}}"></image> -->
+                    <van-stepper value="{{ 0 }}" min = "0" bind:change="onChange" bind:plus = "plus"/>
+									</view>
+								</view>
+							</van-col>
+						</van-row>
+					</view>
+				</swiper-item>
+				<swiper-item id='1' catchtouchmove="stopTouchMove">
+					<view class="lota">汉堡（3）</view>
+					<view style="margin-top:20px;font-size:12px;border-bottom:1px solid silver;padding-bottom:10px" wx:for="{{lis}}" wx:key>
+						<van-row>
+							<van-col span="6" offset="1">
+								<image class="lis_img" src="{{item.photo}}"></image>
+							</van-col>
+							<van-col span="6" offset='1'>
+								<view style="padding-top:20px">
+									<view>
+										<text style="font-size:14px">{{item.text}}</text>
+									</view>
+									<view>
+										<text>{{item.name}}</text>
+									</view>
+									<view>
+										<text style="color:red">
+										{{item.yel}}
+										</text>
+									</view>
+								</view>
+							</van-col>
+								<van-col span="8" offset='1'>
+								<view style="padding-top:20px">
+									<view>招牌</view>
+									<view style="padding-top:25px">
+                  <van-stepper value="{{ 0 }}" min = "0" bind:change="onChange" />
+									</view>
+								</view>
+							</van-col>
+						</van-row>
+					</view>
+				</swiper-item>
+			</swiper>
+		</view>
+	</view>
+</view>
+<!-- 商品结束 -->
+<!-- 底部开始 -->
+<view style="display:{{noe}};color:{{tcol}};border:1px solid silver;border-radius:25px;width:5%;text-align:center;margin-left:100rpx;position:absolute;top:91%">{{num}}</view>
+<view style="margin-top:15px">
+  <van-row>
+  <van-col span="6" offset='1'>
+    <image style="width:55%;height:55px" src="{{toke}}"></image>
+  </van-col>
+  <van-col span="8">
+    <view style="margin-top:10px">
+      <text style="color:{{backcol}}">{{toke_text}}</text>
+    </view>
+  </van-col>
+  <van-col span="8">
+    <view  style="color:{{mcol}};background-color:{{mbcol}};height:50px;margin-top:-10px;text-align:center;padding-top:20px" >
+      ￥<text >{{jia}}</text>元起送
+    </view>
+  </van-col>
+</van-row>
+</view>
+<!-- 底部结束 -->

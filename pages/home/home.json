@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "光谷吃货联盟",
+  "usingComponents": {
+    "van-rate": "/miniprogram/miniprogram_npm/@vant/weapp/rate/index"
+  }
+}

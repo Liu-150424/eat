@@ -1,0 +1,64 @@
+/* pages/vip/vip.wxss */
+/* 金色边框 */
+.bor{
+  width: 15%;
+  height: 15px;
+}
+.bor_tear{
+  font-weight:900;
+  font-size: 22px;
+}
+.bor_text{
+  margin-top: 15px;
+  color: silver;
+}
+.golden{
+  border: 1px solid goldenrod;
+  width: 90%;
+  height: 80px;
+  margin-left: 5%;
+  padding-top: 15px;
+  margin-top: 20px;
+  box-shadow: 5px 5px 5px goldenrod;
+  opacity: 0.6;
+}
+.golden image{
+  width: 40%;
+  height: 50px;
+}
+.golden text{
+  color: silver;
+  font-size: 16px;
+  text-align: center;
+}
+/* 阴影 */
+.shadow{
+  background-color: silver;
+  height: 15px;
+  margin-top: 20px;
+}
+/* 介绍 */
+.introduce{
+  text-align: center;
+  margin-top: 15px;
+}
+.introduce_shop{
+  font-weight:800;
+}
+.introduce_red{
+  color: red;
+  margin-left: 30rpx;
+}
+.introduce_sily{
+  opacity: 0.6;
+}
+.but{
+  text-align: center;
+  margin-top: 60px;
+}
+.but button{
+  background-color: #50bfff;
+  color: white;
+  width: 90%;
+  height: 40px;
+}

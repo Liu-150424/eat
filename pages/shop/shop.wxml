@@ -1,0 +1,48 @@
+<!--pages/shop/shop.wxml-->
+<!-- 开始 -->
+<van-tabs active="{{ active }}" bind:change="onChange" swipe-threshold="5">
+	<van-tab title="代付款" title-style="font-size:12px">
+		<view class="shops">
+			<image src="https://m.qpic.cn/psc?/V125ifz11cmniP/xBo1HguJwfqPLd*kRKpWsM03Zw2rMuhpD*62h0y52r0EhuoRspYJnlGromvnsMRDkyhQnjocD9GsPoqLxphMgw!!/b&bo=ZABkAAAAAAADByI!&rf=viewer_4&t=5"></image>
+		</view>
+		<view class="shops_text">
+			<text>您暂无相关订单哦~</text>
+		</view>
+	</van-tab>
+	<van-tab title="待发货" title-style="font-size:12px">
+		<view class="shops">
+			<image src="https://m.qpic.cn/psc?/V125ifz11cmniP/xBo1HguJwfqPLd*kRKpWsM03Zw2rMuhpD*62h0y52r0EhuoRspYJnlGromvnsMRDkyhQnjocD9GsPoqLxphMgw!!/b&bo=ZABkAAAAAAADByI!&rf=viewer_4&t=5"></image>
+		</view>
+		<view class="shops_text">
+			<text>您暂无相关订单哦~</text>
+		</view>
+	</van-tab>
+	<van-tab title="待收货" title-style="font-size:12px">
+		<view class="shops">
+			<image src="https://m.qpic.cn/psc?/V125ifz11cmniP/xBo1HguJwfqPLd*kRKpWsM03Zw2rMuhpD*62h0y52r0EhuoRspYJnlGromvnsMRDkyhQnjocD9GsPoqLxphMgw!!/b&bo=ZABkAAAAAAADByI!&rf=viewer_4&t=5"></image>
+		</view>
+		<view class="shops_text">
+			<text>您暂无相关订单哦~</text>
+		</view>
+	</van-tab>
+	<van-tab title="已完成" title-style="font-size:12px">
+		<view class="shops">
+			<image src="https://m.qpic.cn/psc?/V125ifz11cmniP/xBo1HguJwfqPLd*kRKpWsM03Zw2rMuhpD*62h0y52r0EhuoRspYJnlGromvnsMRDkyhQnjocD9GsPoqLxphMgw!!/b&bo=ZABkAAAAAAADByI!&rf=viewer_4&t=5"></image>
+		</view>
+		<view class="shops_text">
+			<text>您暂无相关订单哦~</text>
+		</view>
+	</van-tab>
+	<van-tab title="售后" title-style="font-size:12px">
+		<view class="shops">
+			<image src="https://m.qpic.cn/psc?/V125ifz11cmniP/xBo1HguJwfqPLd*kRKpWsM03Zw2rMuhpD*62h0y52r0EhuoRspYJnlGromvnsMRDkyhQnjocD9GsPoqLxphMgw!!/b&bo=ZABkAAAAAAADByI!&rf=viewer_4&t=5"></image>
+		</view>
+		<view class="shops_text">
+			<text>您暂无相关订单哦~</text>
+		</view>
+	</van-tab>
+</van-tabs>
+<!-- 结束 -->
+<view style="margin-top:140px">
+	<van-divider contentPosition="center">加载完毕</van-divider>
+</view>
